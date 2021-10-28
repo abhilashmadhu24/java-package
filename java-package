@@ -1,0 +1,14 @@
+#!bin/bash
+
+sudo apt update -y 
+sudo apt install default-jre -y
+sudo apt install default-jdk -y
+
+sudo apt install software-properties-common apt-transport-https wget -y
+sudo wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
+
+/usr/bin/code
+
+# view >> extensions >> extension package for java >> install
